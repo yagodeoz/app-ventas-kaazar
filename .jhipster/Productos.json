@@ -1,0 +1,60 @@
+{
+  "name": "Productos",
+  "fields": [
+    {
+      "fieldName": "descripcionProducto",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "imagenProducto",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    },
+    {
+      "fieldName": "precioProducto",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "valorIva",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "valorICE",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "descuento",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "noVisitas",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "carritoClienteDetalle",
+      "otherEntityRelationshipName": "productos",
+      "relationshipName": "carritoClienteDetalle"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "empresa",
+      "otherEntityRelationshipName": "productos",
+      "relationshipName": "empresa",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200720061715",
+  "entityTableName": "productos",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

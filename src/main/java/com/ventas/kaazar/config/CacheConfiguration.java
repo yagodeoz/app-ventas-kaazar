@@ -50,6 +50,14 @@ public class CacheConfiguration {
             createCache(cm, com.ventas.kaazar.domain.User.class.getName());
             createCache(cm, com.ventas.kaazar.domain.Authority.class.getName());
             createCache(cm, com.ventas.kaazar.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.ventas.kaazar.domain.Empresa.class.getName());
+            createCache(cm, com.ventas.kaazar.domain.Empresa.class.getName() + ".productos");
+            createCache(cm, com.ventas.kaazar.domain.CuentaCliente.class.getName());
+            createCache(cm, com.ventas.kaazar.domain.Productos.class.getName());
+            createCache(cm, com.ventas.kaazar.domain.Productos.class.getName() + ".carritoClienteDetalles");
+            createCache(cm, com.ventas.kaazar.domain.CarritoCliente.class.getName());
+            createCache(cm, com.ventas.kaazar.domain.CarritoCliente.class.getName() + ".carritoClienteDetalles");
+            createCache(cm, com.ventas.kaazar.domain.CarritoClienteDetalle.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

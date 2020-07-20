@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity CuentaCliente.
+    -->
+    <changeSet id="20200720061615-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="carrito_cliente_id"
+                                 baseTableName="cuenta_cliente"
+                                 constraintName="fk_cuenta_cliente_carrito_cliente_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="carrito_cliente"/>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,39 @@
+{
+  "name": "CarritoCliente",
+  "fields": [
+    {
+      "fieldName": "fechaAcceso",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "fechaUltimaCompra",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "carritoClienteDetalle",
+      "otherEntityRelationshipName": "carritoCliente",
+      "relationshipName": "carritoClienteDetalle"
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "cuentaCliente",
+      "otherEntityRelationshipName": "carritoCliente",
+      "relationshipName": "cuentaCliente",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20200720061815",
+  "entityTableName": "carrito_cliente",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
