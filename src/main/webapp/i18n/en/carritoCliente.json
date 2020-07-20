@@ -1,0 +1,25 @@
+{
+  "appKaazarApp": {
+    "carritoCliente": {
+      "home": {
+        "title": "Carrito Clientes",
+        "createLabel": "Create a new Carrito Cliente",
+        "createOrEditLabel": "Create or edit a Carrito Cliente",
+        "notFound": "No Carrito Clientes found"
+      },
+      "created": "A new Carrito Cliente is created with identifier {{ param }}",
+      "updated": "A Carrito Cliente is updated with identifier {{ param }}",
+      "deleted": "A Carrito Cliente is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Carrito Cliente {{ id }}?"
+      },
+      "detail": {
+        "title": "Carrito Cliente"
+      },
+      "fechaAcceso": "Fecha Acceso",
+      "fechaUltimaCompra": "Fecha Ultima Compra",
+      "carritoClienteDetalle": "Carrito Cliente Detalle",
+      "cuentaCliente": "Cuenta Cliente"
+    }
+  }
+}

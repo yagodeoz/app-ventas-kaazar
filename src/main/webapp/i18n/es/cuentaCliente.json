@@ -1,0 +1,28 @@
+{
+  "appKaazarApp": {
+    "cuentaCliente": {
+      "home": {
+        "title": "Cuenta Clientes",
+        "createLabel": "Crear nuevo Cuenta Cliente",
+        "createOrEditLabel": "Crear o editar Cuenta Cliente",
+        "notFound": "Ningún Cuenta Clientes encontrado"
+      },
+      "created": "Un nuevo Cuenta Cliente ha sido creado con el identificador {{ param }}",
+      "updated": "Un Cuenta Cliente ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Cuenta Cliente ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Cuenta Cliente {{ id }}?"
+      },
+      "detail": {
+        "title": "Cuenta Cliente"
+      },
+      "usuario": "Usuario",
+      "clave": "Clave",
+      "avatar": "Avatar",
+      "fechaUltimoAcceso": "Fecha Ultimo Acceso",
+      "nombres": "Nombres",
+      "apellidos": "Apellidos",
+      "carritoCliente": "Carrito Cliente"
+    }
+  }
+}

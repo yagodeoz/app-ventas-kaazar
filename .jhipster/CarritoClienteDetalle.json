@@ -1,0 +1,40 @@
+{
+  "name": "CarritoClienteDetalle",
+  "fields": [
+    {
+      "fieldName": "cantidad",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "total",
+      "fieldType": "Double"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "carritoCliente",
+      "otherEntityRelationshipName": "carritoClienteDetalle",
+      "relationshipName": "carritoCliente",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "productos",
+      "otherEntityRelationshipName": "carritoClienteDetalle",
+      "relationshipName": "productos",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200720061915",
+  "entityTableName": "carrito_cliente_detalle",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
