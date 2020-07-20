@@ -1,0 +1,60 @@
+
+entity Empresa {
+	nombreEmpresa String,
+    rucEmpresa String,
+    direccion String,
+    logo ImageBlob,
+    colorTema String,
+}
+entity CuentaCliente {
+	usuario String,
+    clave String,
+    avatar String,
+    fechaUltimoAcceso LocalDate,
+    nombres String,
+    apellidos String,
+}
+
+entity Productos {
+    descripcionProducto String,
+    imagenProducto ImageBlob,
+    precioProducto Double,
+    valorIva Double,
+  	valorICE Double,
+    descuento Double,
+    noVisitas Long,
+}
+
+entity CarritoCliente {
+    fechaAcceso LocalDate,
+    fechaUltimaCompra LocalDate,
+}
+entity CarritoClienteDetalle {
+    cantidad Long,
+    total Double,
+}
+
+
+
+relationship OneToOne {
+	CuentaCliente  to CarritoCliente 
+}
+
+
+relationship OneToMany {
+	CarritoCliente  to CarritoClienteDetalle 
+}
+
+relationship OneToMany {
+	Productos  to CarritoClienteDetalle 
+}
+
+relationship OneToMany {
+	Empresa   to Productos 
+}
+
+paginate Productos with infinite-scroll
+paginate CarritoClienteDetalle with pagination
+
+service all with serviceImpl 
+
