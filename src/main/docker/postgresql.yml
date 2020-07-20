@@ -1,0 +1,12 @@
+version: '2'
+services:
+  appkaazar-postgresql:
+    image: postgres:12.3
+    # volumes:
+    #     - ~/volumes/jhipster/appKaazar/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=appKaazar
+      - POSTGRES_PASSWORD=
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - 5432:5432
